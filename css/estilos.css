@@ -1,0 +1,154 @@
+/*Comentario de css*/
+/*Header y footer*/
+.botonRojo, .botonAzul, .botonVerde {
+  border-radius: 20px;
+  background-color: aqua;
+  padding: 10px;
+  text-align: center;
+  color: red;
+  width: 50px;
+}
+
+.botonVerde {
+  color: green;
+  width: 70px;
+}
+
+.botonAzul {
+  color: blue;
+}
+
+/*mixin*/
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.caja {
+  width: 30%;
+  height: 50px;
+}
+
+.caja2 {
+  width: 40%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.robertito {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+header .menu {
+  background-color: #041562;
+}
+header .menu .logo {
+  width: 70px;
+}
+header .menu ul a {
+  color: #ffffff;
+}
+
+/*Banner*/
+.banner {
+  text-align: center;
+  background-image: url(../medios/banner.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-shadow: 1px 1px 8px rgb(0, 0, 0);
+  height: 50vh;
+  padding-top: 20px;
+  /*hijos*/
+}
+.banner .tituloBanner {
+  font-size: 2.5rem;
+  text-shadow: 0px 0px 41px #FF8040;
+  color: #ffffff;
+}
+.banner .textoBanner {
+  font-size: 1.8rem;
+  color: #FF8040;
+  font-weight: bold;
+  text-shadow: 0px 0px 41px #ffffff;
+}
+
+/*Vectores*/
+.presentacion {
+  margin: 20px 0;
+}
+.presentacion h2 {
+  text-align: center;
+  text-decoration: underline;
+  color: #11468F;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+.presentacion .iconos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.presentacion .iconos div img {
+  width: 200px;
+}
+.presentacion .iconos div p {
+  color: #11468F;
+}
+
+.objetivo {
+  background-color: #041562;
+  padding: 20px;
+}
+.objetivo p {
+  color: #FF8040;
+  text-align: justify;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 500px) {
+  /*index--------------------------------------*/
+  .iconos {
+    flex-direction: column;
+  }
+  .publicacion {
+    flex-direction: column;
+  }
+  .venta, .alquiler {
+    width: 90%;
+    margin: 5px auto;
+  }
+  /*nosotros-----------------------------------*/
+  .contenedor-grid {
+    grid-template-areas: "h1" "texto1" "casa1" "texto2" "casa3" "texto3" "h2";
+    grid-template-columns: 100%;
+    grid-template-rows: 100px 250px repeat(4, 200px) 150px;
+  }
+  .contenedor-grid img {
+    width: 95%;
+  }
+  .contenedor-grid .grid-img-3 {
+    display: none;
+  }
+  .grid-titulo-2, .grid-titulo-1 {
+    font-size: 3rem;
+    text-align: center;
+  }
+  /*footer-------------------------------------*/
+  footer div {
+    width: 55%;
+  }
+  footer p {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */
